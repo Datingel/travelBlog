@@ -1,7 +1,22 @@
+html {
+  background-image: linear-gradient(
+    to right,
+    rgba(141, 133, 133, 0),
+    rgb(92, 86, 86)
+  );
+}
+
 body {
-  margin-left: 10rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   font-family: sans-serif;
   color: black;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav {
