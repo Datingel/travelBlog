@@ -8,56 +8,61 @@
   </head>
 
   <body class="container">
-    <ul>
-      <li><a style="font-size: 25px;" href="#">LA</a></li>
-      <li><a href="#">Articles</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <div class="wrapper-content">
+      <nav>
+        <ul>
+          <li><a href="#">LA</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-    <div class="right-side-img">
-      <img src="assets/view.jpg" alt="View Picture" />
-    </div>
+      <div>
+        <h1
+          style="
+            border-bottom: 1px solid black;
+            padding-bottom: 5vh;
+            line-height: 8vh;
+          "
+        >
+          Hi - iam Raphael and i write <br />
+          about traveling
+        </h1>
+      </div>
 
-    <div>
-      <h1 style="border-bottom: 1px solid black;">
-        Hi - iam Raphael and i write about traveling
-      </h1>
-    </div>
+      <h2 style="margin-bottom: 4rem;">Latest Articles</h2>
 
-    <div>
-      <h2>Latest Articles</h2>
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: start;
-          padding-bottom: 3rem;
-        "
-      >
-        <div style="display: flex; align-items: center;">
-          <img
-            src="assets/tree.jpg"
-            alt="Tree Picture"
-            width="250"
-            height="250"
-            style="border-radius: 50%;"
-          />
-          <p style="padding-left: 1rem; padding-right: 5rem;">
-            Travel Storys from the tree experience
-          </p>
+      <div style="display: flex; flex-direction: row; justify-content: start;">
+        <div class="wrapper-articles">
+          <div style="display: flex; align-items: center;">
+            <img
+              src="assets/tree.jpg"
+              alt="Tree Picture"
+              width="200px"
+              height="200px"
+              style="border-radius: 50%;"
+            />
+            <p style="padding-left: 1rem; padding-right: 5rem;">
+              Travel Storys from the tree experience
+            </p>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img
+              src="assets/man.jpg"
+              alt="Man Picture"
+              width="200px"
+              height="200px"
+              style="border-radius: 50%;"
+            />
+            <p style="padding-left: 1rem;">Cultures i met on my journey</p>
+          </div>
         </div>
-
-        <div style="display: flex; align-items: center;">
-          <img
-            src="assets/man.jpg"
-            alt="Man Picture"
-            width="250"
-            height="250"
-            style="border-radius: 50%;"
-          />
-          <p style="padding-left: 1rem;">Cultures i met on my journey</p>
-        </div>
+      </div>
+    </div>
+    <div class="container-image">
+      <div class="wrapper-image">
+        <img src="assets/view.jpg" alt="View Picture" />
       </div>
     </div>
   </body>
