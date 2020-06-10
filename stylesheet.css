@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   background-color: grey;
+  font-family: "Open Sans", sans-serif;
 }
 
 @media (min-width: 985px) {
@@ -23,7 +24,6 @@ body {
 
 .container-card {
   margin: 1rem;
-  font-family: sans-serif;
   color: black;
   background-color: rgb(241, 235, 235);
   border-radius: 20px;
@@ -46,15 +46,16 @@ body {
   flex-direction: column;
 }
 
-.wrapper-articles {
+.article-wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding-bottom: 5rem;
   flex: 2 0 0%;
 }
 
 @media (min-width: 715px) {
-  .wrapper-articles {
+  .article-wrapper {
     display: flex;
     flex-direction: row;
     padding-bottom: 5rem;
@@ -91,7 +92,9 @@ nav ul a:hover {
 h1 {
   display: flex;
   text-transform: uppercase;
+  flex-wrap: wrap;
   font-size: 2rem;
+  margin-top: 3rem;
 }
 
 h2 {
@@ -103,4 +106,22 @@ h2 {
   background-size: cover;
   background-position: center;
   min-width: 300px;
+}
+
+.article1-img {
+  background-image: url("./assets/tree.jpg");
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.article2-img {
+  background-image: url("./assets/man.jpg");
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
 }
