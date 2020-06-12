@@ -38,9 +38,9 @@ body {
 }
 
 .content-wrapper {
-  padding-left: 10vh;
-  padding-right: 15vh;
-  width: 700px;
+  padding-left: 7vh;
+  padding-right: 12vh;
+  width: 750px;
   display: flex;
   flex-direction: column;
 }
