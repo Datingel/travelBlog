@@ -3,16 +3,16 @@ body {
   height: 100%;
   background-color: grey;
   font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  margin: 0;
 }
 
-@media (min-width: 985px) {
+@media (min-width: 750px) {
   html,
   body {
-    background-image: linear-gradient(
-      to right,
-      rgba(141, 133, 133, 0),
-      rgb(92, 86, 86)
-    );
+    background-image: linear-gradient(45deg, #ddd 0%, #6e7067 100%);
+    overflow: hidden;
+    margin: 0;
   }
 }
 
@@ -31,18 +31,34 @@ body {
   display: flex;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 425px) {
   .container-card {
-    margin: 5rem;
+    height: 100%;
+    border-radius: 0;
   }
 }
 
 .content-wrapper {
-  padding-left: 7vh;
-  padding-right: 12vh;
-  width: 750px;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 750px) {
+  .content-wrapper {
+    padding-left: 4vh;
+    padding-right: 4vh;
+    width: 750px;
+  }
+}
+
+@media (max-width: 425px) {
+  .content-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .article-wrapper {
@@ -52,44 +68,53 @@ body {
   margin-bottom: 5rem;
 }
 
-@media (min-width: 930px) {
+@media (min-width: 750px) {
   .article-wrapper {
     display: flex;
     flex-direction: row;
   }
 }
 
+.nav-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .article {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin: 2rem 2rem 0 0;
 }
 
 .wrapper-image {
   background-image: url("./assets/view.jpg");
   background-size: cover;
   background-position: center;
-  min-width: 400px;
+  min-width: 300px;
 }
 
-.article1-img {
+@media (max-width: 750px) {
+  .wrapper-image {
+    display: none;
+  }
+}
+
+.articleImg {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img1 {
   background-image: url("./assets/tree.jpg");
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
 }
 
-.article2-img {
+.img2 {
   background-image: url("./assets/man.jpg");
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
 }
 
 .article-txt {
@@ -101,8 +126,6 @@ body {
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 nav ul {
@@ -134,11 +157,4 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-}
-
-hr {
-  margin: 50px 0;
-  border: none;
-  height: 1px;
-  background: #aaa;
 }
