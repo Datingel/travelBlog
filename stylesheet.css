@@ -23,7 +23,6 @@ body {
 }
 
 .container-card {
-  margin: 1rem;
   color: black;
   background-color: rgb(241, 235, 235);
   border-radius: 20px;
@@ -33,15 +32,15 @@ body {
 }
 
 @media (min-width: 500px) {
-  .container {
+  .container-card {
     margin: 5rem;
   }
 }
 
-.wrapper-content {
+.content-wrapper {
   padding-left: 10vh;
-  padding-right: 30vh;
-  width: 500px;
+  padding-right: 15vh;
+  width: 700px;
   display: flex;
   flex-direction: column;
 }
@@ -49,18 +48,54 @@ body {
 .article-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding-bottom: 5rem;
-  flex: 2 0 0%;
+  justify-content: flex-start;
+  margin-bottom: 5rem;
 }
 
-@media (min-width: 715px) {
+@media (min-width: 930px) {
   .article-wrapper {
     display: flex;
     flex-direction: row;
-    padding-bottom: 5rem;
-    flex: 2 0 0%;
   }
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.wrapper-image {
+  background-image: url("./assets/view.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 400px;
+}
+
+.article1-img {
+  background-image: url("./assets/tree.jpg");
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.article2-img {
+  background-image: url("./assets/man.jpg");
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.article-txt {
+  padding-left: 1rem;
+  color: darkgrey;
+  font-style: italic;
 }
 
 nav ul {
@@ -101,27 +136,9 @@ h2 {
   text-transform: uppercase;
 }
 
-.wrapper-image {
-  background-image: url("./assets/view.jpg");
-  background-size: cover;
-  background-position: center;
-  min-width: 300px;
-}
-
-.article1-img {
-  background-image: url("./assets/tree.jpg");
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-}
-
-.article2-img {
-  background-image: url("./assets/man.jpg");
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
+hr {
+  margin: 50px 0;
+  border: none;
+  height: 1px;
+  background: #aaa;
 }
